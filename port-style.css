@@ -1,0 +1,660 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    
+}
+.nav{
+    height: 80px;
+    background: #141414;
+    color: #fff;
+    top: 10;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    z-index: 999;
+}
+.nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    align-content: center;
+}
+.logo-container{
+    width: 80px;
+    height: 60px;
+    margin-left: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    font-size: 14px;
+}
+.logo-container .fa-drupal{
+    align-self: center;
+    font-size: 30px;
+    outline: white;
+    color: #ff8177
+}
+.logo-container span{
+    font-size: 18px;
+    font-weight: 600;
+}
+.toggle{
+    display: none;
+}
+.fa-bars, .fa-times{
+    display: none;
+    font-size: 24px;
+    margin-right: 10px;
+}
+.nav-menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    transform: scaleX(1.12);
+    color: #ff8177;
+}
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/pexels-tyler-lastovich-997443.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    /* position: sticky; */
+    top: 0;
+}
+.home-container{
+    margin-top: 50px;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+.logo-container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 170px;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255, 0.02);
+    align-items: center;
+    border-top: none;
+}
+.logo-container2 .fa-drupal{
+    color: #ff8177;
+    font-size: 60px;
+}
+.logo-container2 span{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.details{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.details .skill-sets{
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
+}
+/*about section*/
+#about{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: linear-gradient(-172deg, rgb(244, 244, 244, 0) 30%, #ffffff calc(30% + 2px)); I used the calc (30% + 2px) to remove the jaggness by providing a smooting transition of the 2 pictures */
+    background: #ffff;
+    padding: 20px 0;
+}
+.about-container{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+    margin: 10px, 0;
+    padding: 0 20px;
+}
+.about-me{
+    width: 140px;
+    height: 60px;
+    border: 2px solid #ff8177;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me .fa-user{
+    color: #ff8177;
+}
+.my-details{
+    width: 100%;
+    display: flex;
+    margin: 0 10px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.profile{
+    height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ff8177;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px 60px 0;
+}
+.image img{
+    height: 220px;
+    /* border-radius: 50%; */
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.my-information{
+    width: 500px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.my-skills{
+    display: flex;
+    width: 400px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.my-skills p{
+    color: white;
+    background-color: #ff8177;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*Services Section*/
+#services{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background: url(images/pexels-oleg-magni-1040499.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 0;
+}
+#services fieldset{
+    width: 340px;
+    height: 60px;
+    background-color: rgba(240, 235, 235, 0.9);
+    border: 1px solid rgb(255, 129, 119);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services .fa-toolbox{
+    color: #ff8177;
+}
+#services h1{
+    /* color: #ff8177; */
+    /* margin-bottom: 5rem; */
+    font-size: 2.5rem;
+}
+.visual {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.vd, .fd, .cm{
+    margin: 1rem;
+    height: 425px;
+    width: 350px;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    color: #fff;
+    line-height: 1.4;
+}
+.vd span, .fd span, .cm span{
+    position: absolute;
+    top: 280px;
+    margin: 10px;
+    font-size: 14px;
+    text-align: justify;
+    background-color: rgba(78, 9, 190, 0.3);
+    border-radius: 10px;
+}
+.vd h4, .fd h4, .cm h4{
+    position: absolute;
+    top: 250px;
+    font-size: 22px;
+    margin: 10px;
+    font-weight: 600;
+}
+.vd:hover, .fd:hover, .cm:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.vd{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/pexels-hasan-albari-1229861.jpg');;
+}
+.fd{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/pexels-negative-space-160107.jpg');;
+}
+.cm{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/pexels-pixabay-39284.jpg');;
+}
+
+/*Portfolio section*/
+#portfolio{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    background: lightgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#portfolio fieldset{
+    width: 340px;
+    height: 60px;
+    background-color: rgba(240, 235, 235, 0.9);
+    border: 1px solid rgb(255, 129, 119);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio .fa-user-tie{
+    color: #ff8177;
+}
+#portfolio p{
+    font-size: 16px;
+    font-weight: 400;
+    width: 650px;
+    line-height: 1.5;
+}
+.projects{
+    width: 750px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project1{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+.project2, .project3{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+.project1:hover, .project2:hover, .project3:hover{
+    transform: scale(1.045);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.project1 img, .project2 img, .project3 img{
+    width: 100%;
+    height: 100%;
+}
+
+/*Contact Section*/
+#contact{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    color: black;
+}
+.contact-container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color: black;
+    background: white;
+    background: linear-gradient(to right bottom, 
+    rgba(255, 255, 255, 0.7), 
+    rgba(255,255,255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    position: relative;
+}
+
+#contact fieldset{
+    width: 340px;
+    height: 60px;
+    background-color: white;
+    border: 1px solid rgb(255, 129, 119);
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#contact .fa-address-book{
+    color: rgb(255, 129, 119)
+}
+#contact p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    flex-wrap: wrap;
+}
+.socials img{
+    width: 70px;
+    height: 70px;
+}
+.socials img:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+}
+.footer__copy{
+    color: black;
+    text-align: center;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    width: 100%
+}
+
+@media screen and (max-width: 1000px){
+    .my-information{
+        width: 500px;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width: 880px){
+    .nav-menu{
+        width: 300px;
+        height: 400px;
+        background: #141414;
+        top: 80px;
+        right: 0px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        
+        transition: all .5s ease-in;
+    }
+    .toggle{
+        display: flex;
+    }
+    .fa-bars{
+        display: flex;
+    }
+    .fa-times{
+        display: none;
+    }
+    .active {
+        display: flex;
+    }
+    .remove{
+        display: none;
+    }
+    .details .skill-sets{
+        display: flex;
+        width: 600px;
+        justify-content: space-evenly;
+    }
+    .details .skill-sets p{
+        font-size: 14px;
+    }
+    .my-information{
+        width: 500px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .profile{
+        height: 60vh;
+        justify-content: space-evenly;
+    }
+    .image{
+        width: 150px;
+        height: 150px;
+    }
+    .image img{
+        height: 170px;
+        /* border-radius: 50%; */
+    }
+    .my-skills{
+        width: 250px;
+        gap: 5px;
+    }
+    .education{
+        font-size: 12px;
+    }
+    .my-skills p{
+        padding: 5px;
+        font-size: 14px;
+    }
+    #services fieldset{
+        width: 330px;
+        height: 50px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .vd, .fd, .cm{
+        margin: .7rem;
+        height: 335px;
+        width: 270px;
+        line-height: 1.3;
+    }
+    .vd span, .fd span, .cm span{
+        top: 180px;
+        font-size: 13px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .vd h4, .fd h4, .cm h4{
+        top: 150px;
+        font-size: 16px;
+    }
+    #portfolio p{
+        font-size: 14px;
+        width: 500px;
+    }
+    .projects{
+        width: 550px;
+    }
+    .project1{
+        width: 100px;
+        height: 150px;
+    }
+    .project2, .project3{
+        width: 200px;
+        height: 150px;
+    }
+    #contact p{
+        font-size: 14px;
+    }
+    .socials{
+        width: 500px;
+    }
+    .socials img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .about-me, 
+    #services fieldset,
+    #portfolio fieldset,
+    #contact fieldset{
+        width: 140px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .details .skill-sets{
+        display: flex;
+        width: 350px;
+        justify-content: space-around;
+    }
+    .details .skill-sets p{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .my-information{
+        width: 350px;
+        font-size: 12px;
+        line-height: 1.2;
+        text-align: justify;
+    }
+    .profile{
+        height: 50vh;
+        padding-top: 25px;
+        justify-content: space-evenly;
+    }
+    .image{
+        width: 130px;
+        height: 130px;
+    }
+    .image img{
+        height: 160px;
+        /* border-radius: 50%; */
+    }
+    .my-skills{
+        width: 180px;
+        gap: 5px;
+    }
+    .education{
+        font-size: 10px;
+    }
+    .my-skills p{
+        padding: 3px;
+        font-size: 10px;
+    }
+    .vd, .fd, .cm{
+        margin: .5rem;
+        height: 300px;
+        width: 250px;
+        line-height: 1.3;
+    }
+    .vd span, .fd span, .cm span{
+        top: 160px;
+        font-size: 12px;
+    }
+    .vd h4, .fd h4, .cm h4{
+        top: 140px;
+        font-size: 14px;
+    }
+    #portfolio p{
+        font-size: 14px;
+        width: 350px;
+    }
+    .projects{
+        flex-direction: column;
+        width: 350px;
+    }
+    .project1{
+        width: 100px;
+        height: 150px;
+        margin: 10px 0;
+    }
+    .project2, .project3{
+        width: 200px;
+        height: 150px;
+        margin: 10px 0;
+    }
+    #contact p{
+        width: 270px;
+        font-size: 12px;
+    }
+    .socials{
+        width: 320px;
+    }
+    .socials img{
+        width: 35px;
+        height: 35px;
+    }
+}
